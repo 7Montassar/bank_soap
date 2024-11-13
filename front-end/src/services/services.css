@@ -1,0 +1,183 @@
+/* General container styling for forms */
+.form-container {
+  width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center all form items horizontally */
+}
+
+/* Form header styling */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* General form styling */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Center form elements horizontally */
+}
+
+/* Label styling */
+.form-container label {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  text-align: center; /* Center the label text */
+}
+
+/* Input field container (for better alignment) */
+.form-container .input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center; /* Center the input container */
+}
+
+/* Input field styling */
+.form-container input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: transparent; /* Set background to transparent */
+  color: #333; /* Set text color for visibility */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  width: 100%; /* Make inputs take up full width of form */
+  max-width: 350px; /* Optional: Limit maximum width of inputs */
+}
+
+/* Focus effect for input fields */
+.form-container input:focus {
+  border-color: #5a189a;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.05); /* Light background color on focus for better visibility */
+}
+
+/* Button styling */
+.form-container button {
+  padding: 12px;
+  background-color: #5a189a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Make button take up full width of form */
+  max-width: 350px; /* Optional: Limit maximum width of button */
+}
+
+/* Button hover effect */
+.form-container button:hover {
+  background-color: #4c1482; 
+}
+
+/* Message styling (success or error) */
+.form-container p {
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.form-container p.success {
+  color: green;
+}
+
+.form-container p.error {
+  color: red;
+}
+
+/* Input field padding and layout adjustments */
+.form-container input[type="email"], 
+.form-container input[type="text"] {
+  padding-left: 12px; /* Ensures padding is consistent across inputs */
+  padding-right: 12px;
+  line-height: 1.5;
+}
+
+/* Consistent styling for form buttons */
+.form-container button[type="submit"] {
+  width: 100%;
+}
+
+/* Hover and active state for inputs */
+.form-container input:hover,
+.form-container input:active {
+  border-color: #5a189a;
+  background-color: rgba(0, 0, 0, 0.05); /* Light background color on hover */
+}
+
+/* Account details styling */
+.account-details {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px; /* Optional: Limit maximum width */
+}
+
+.account-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.account-item strong {
+  font-weight: bold;
+}
+
+.account-item span {
+  margin-left: 10px;
+  color: #333;
+}
+
+/* Adjust the input container to give space between label, input, and button */
+.form-container .input-container div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Separate account display section from the rest */
+.account-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-details div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.account-details div strong {
+  font-weight: bold;
+}
+
+.account-item strong {
+  font-weight: bold;
+  color: #4c1482;
+}
+
+.account-item p {
+  color: #333;
+}
